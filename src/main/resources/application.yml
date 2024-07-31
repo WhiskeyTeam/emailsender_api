@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: admin_email_sender_api
+  mail:
+    host: db.dokalab.site
+    port: 25
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: false
+          starttls:
+            enable: false
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+    username: root
+    password: L9*eJ!Ei9c*Gn
+
+server:
+  port: 8080
