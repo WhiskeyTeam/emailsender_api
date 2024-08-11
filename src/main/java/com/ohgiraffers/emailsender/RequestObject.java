@@ -3,14 +3,6 @@ package com.ohgiraffers.emailsender;
 public class RequestObject {
     private String to;
     private String subject;
-    private String text;
-
-    public RequestObject() {}
-    public RequestObject(String to, String subject, String text) {
-        this.to = to;
-        this.subject = subject;
-        this.text = text;
-    }
 
     public String getTo() {
         return to;
@@ -35,4 +27,6 @@ public class RequestObject {
     public void setText(String text) {
         this.text = text;
     }
+
+    private String text;
 }
