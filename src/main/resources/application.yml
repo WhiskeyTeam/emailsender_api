@@ -2,15 +2,22 @@ spring:
   application:
     name: admin_email_sender_api
   mail:
-    host: db.dokalab.site
-    port: 25
-    username: ADMIN
+    host: smtp.gmail.com
+    port: 587
+    username: ${{ secrets.EMAIL}}
+    password: ${{ secrets.PASSWORD}}
     properties:
       mail:
         smtp:
-          auth: false
+          auth: true
           starttls:
-            enable: false
+            enable: true
+#    properties:
+#      mail:
+#        smtp:
+#          auth: false
+#          starttls:
+#            enable: false
 
 server:
   port: 8080
