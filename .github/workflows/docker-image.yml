@@ -35,13 +35,13 @@ jobs:
       #     mkdir -p src/main/resources
       #     echo "${{ secrets.APPLICATION_YML }}" | base64 --decode > src/main/resources/application.yml
       #     find src
-      - name: Set Yaml
-        uses: microsoft/variable-substitution@v1
-        with:
-          files: src/main/resources/application.yml
-        env:
-          spring.mail.username: ${{ secrets.EMAIL }}
-          spring.mail.password: ${{ secrets.PASSWORD }}
+#      - name: Set Yaml
+#        uses: microsoft/variable-substitution@v1
+#        with:
+#          files: src/main/resources/application.yml
+#        env:
+#          spring.mail.username: ${{ secrets.EMAIL }}
+#          spring.mail.password: ${{ secrets.PASSWORD }}
       - name: Grant permission for gradlew
         run: chmod +x ./gradlew
       - name: Build with Gradle
