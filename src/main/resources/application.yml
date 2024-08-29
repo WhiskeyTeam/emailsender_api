@@ -3,7 +3,7 @@ spring:
     name: admin_email_sender_api
   mail:
     host: db.dokalab.site
-    port: 25
+    port: 21824
     protocol: smtp
     properties:
       mail:
